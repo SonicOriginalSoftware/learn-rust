@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug (Windows)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/target/debug/${workspaceFolderBasename}",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build debug",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Run (Windows)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/target/release/${workspaceFolderBasename}",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build release",
+      "console": "integratedTerminal"
+    }
+  ],
+  "compounds": []
+}
