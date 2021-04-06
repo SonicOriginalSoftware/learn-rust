@@ -19,7 +19,9 @@ struct Container<C: CanDoThings> {
 
 /// The program entry function
 fn main() {
-    let container = Container { a_thing: Thing {} };
+    let thing = Thing{};
+
+    let container = Container { a_thing: thing };
 
     container.a_thing.do_it();
 }
